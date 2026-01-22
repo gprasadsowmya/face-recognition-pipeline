@@ -3,7 +3,7 @@
 A distributed edge/cloud ML pipeline that performs face detection at the edge (AWS IoT Greengrass) and face recognition in the cloud (AWS Lambda), connected through decoupled SQS request/response queues.
 
 ## Architecture
-![Architecture Diagram]
+![Architecture diagram](docs/architecture.png)
 - IoT device publishes video frames (base64) to an MQTT topic in AWS IoT Core.
 - Greengrass Core runs a **Face Detection** component:
   - Subscribes to the MQTT topic
